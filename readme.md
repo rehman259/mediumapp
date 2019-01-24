@@ -15,50 +15,55 @@ What things you need to install.
 # NPM
 
 ```
+## Built With
+
+* Laravel
+* VueJS
+* PHPUnit
 
 ### Installing
 
 A step by step series of examples that tell you how to get a development env running
 
-Install Dependencies
+1. Install Dependencies
 ```
 composer install
 ```
 
 ```
-Create DB in Database
+2. Create DB in Database
 ```
 
 ```
-Set DB credentials in .env file.
+3. Set DB credentials in .env file.
 ```
 
-Run Migrations
+4. Run Migrations
 ```
 php artisan migrate
 ```
 
-Import Data
+5. Import Data
 ```
 php artisan db:seed
 ```
 
-If you get an error about an encryption key
+6. If you get an error about an encryption key
 ```
 php artisan key:generate
 ```
 
-Install JS Dependencies
+7. Install JS Dependencies
 ```
 npm install
 ```
 
-Watch Files
+8. Watch Files
 ```
 npm run watch
 ```
 
-Run Server
+9. Run Server
 ```
 php artisan serve
 ```
@@ -74,15 +79,6 @@ Frontend Link
 ```
 http://127.0.0.1:8000
 ```
-
-## Built With
-
-* PHP 7
-* Laravel
-* VueJS
-* PHPUnit
-
-
 
 ## Authors
 
