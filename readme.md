@@ -8,10 +8,12 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
-
+What things you need to install.
 ```
-Give examples
+# PHP 7.0
+# Laravel 5.4
+# NPM
+
 ```
 
 ### Installing
@@ -61,22 +63,21 @@ Run Server
 php artisan serve
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
+Admin Link
 ```
-Give an example
+http://127.0.0.1:8000/login
+#username: rehman@msn.com
+#password: creative123
+```
+
+Frontend Link
+```
+http://127.0.0.1:8000
 ```
 
 ## Built With
 
+* PHP 7
 * Laravel
 * VueJS
 * PHPUnit
