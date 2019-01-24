@@ -18,56 +18,47 @@ Give examples
 
 A step by step series of examples that tell you how to get a development env running
 
-# Install Dependencies
+Install Dependencies
 ```
 composer install
 ```
 
-# Create DB in Database
+```
+Create DB in Database
+```
 
-# Set DB credentials in .env file.
+```
+Set DB credentials in .env file.
+```
 
-# Run Migrations
+Run Migrations
 ```
 php artisan migrate
 ```
 
-# Import Data
+Import Data
 ```
 php artisan db:seed
 ```
 
-# If you get an error about an encryption key
+If you get an error about an encryption key
 ```
 php artisan key:generate
 ```
 
-# Install JS Dependencies
+Install JS Dependencies
 ```
 npm install
 ```
 
-# Watch Files
+Watch Files
 ```
 npm run watch
 ```
 
-# Run Server
+Run Server
 ```
 php artisan serve
-```
-
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
 ```
 
 End with an example of getting some data out of the system or using it for a little demo
