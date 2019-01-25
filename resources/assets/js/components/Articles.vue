@@ -47,33 +47,6 @@
           }).catch((error) => {
             console.log(error);
           });
-      },
-      createContact: function(){
-        console.log('Creating contact...');
-        let self = this;
-        let params =Object.assign({}, self.contact);
-        axios.post('api/contact/store', params)
-          .then(function(){
-            self.contact.name = '';
-            self.contact.email = '';
-            self.contact.phone = '';
-            self.edit = false;
-            self.fetchContactList();
-          })
-          .catch(function(error){
-            console.log(error);
-          });
-      },
-      showContact: function(id){
-        let self = this;
-        axios.get('api/contact/'+id)
-          .then(function(response){
-            self.contact.id = response.data.id;
-            self.contact.name = response.data.name;
-            self.contact.email = response.data.email;
-            self.contact.phone = response.data.phone;
-          })
-          self.edit = true;
       }
       
     }
