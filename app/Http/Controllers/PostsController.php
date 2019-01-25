@@ -36,8 +36,6 @@ class PostsController extends Controller
         if($categories->count() == 0 || $tags->count() == 0)
         {
             Session::flash('info', 'You must have some categories and tags before attempting to create a post.');
-
-            // return redirect()->back();
         }
 
         return view('admin.posts.create')->with('categories', $categories)
@@ -162,43 +160,14 @@ class PostsController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function destroy($id)
-    {/* echo "here";
-    exit();*/
+    {
         $post = Post::find($id);
 
         $post->delete();
 
         Session::flash('success', 'The Article is deleted.');
 
-        // return redirect('')->back();
         return redirect()->route('post.index');
     }
-
-  /*  public function trashed() {
-        $posts = Post::onlyTrashed()->get();
-        
-        return view('admin.posts.trashed')->with('posts', $posts);
-    }*/
-
-/*    public function kill($id)
-    {
-        $post = Post::withTrashed()->where('id', $id)->first();
-        
-        $post->forceDelete();
-
-        Session::flash('success', 'Post deleted permanently.');
-
-        return redirect()->back();
-    }*/
-
-  /*  public function restore($id)
-    {
-        $post = Post::withTrashed()->where('id', $id)->first();
-
-        $post->restore();
-
-        Session::flash('success', 'Post restored successfully.');
-
-        return redirect()->route('posts');
-    }*/
+  
 }

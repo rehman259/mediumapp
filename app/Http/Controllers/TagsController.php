@@ -109,7 +109,6 @@ class TagsController extends Controller
 
         Session::flash('success', 'tag deleted.');
 
-        // return redirect()->back();
         return redirect()->route('tags.index');
         
     }

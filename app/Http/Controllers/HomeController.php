@@ -17,8 +17,6 @@ class HomeController extends Controller
      */
     public function index()
     {
-       /* echo "here";
-        exit()*/
         return view('admin.dashboard')
                     ->with('posts_count', Post::all()->count())
                     // ->with('trashed_count', Post::onlyTrashed()->get()->count())
