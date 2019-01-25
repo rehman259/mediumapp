@@ -25,57 +25,61 @@ What things you need to install.
 
 A step by step series of examples that tell you how to get a development env running
 
-1. Install Dependencies
+1. Install Dependencies (If composer not installed in system then install it from here https://getcomposer.org/)
 ```
-composer install
-```
-
-```
-2. Create DB in Database
+composer install 
 ```
 
 ```
-3. Set DB credentials in .env file.
+2. Copy new .env file in case its not available. 
 ```
 
-4. Run Migrations
+```
+3. Create DB in Database
+```
+
+```
+4. Set DB credentials in .env file.
+```
+
+5. Run Migrations
 ```
 php artisan migrate
 ```
 
-5. Import Data
+6. Import Data
 ```
 php artisan db:seed
 ```
 
-6. If you get an error about an encryption key
+7. If you get an error about an encryption key
 ```
 php artisan key:generate
 ```
 
-7. Install JS Dependencies
+8. Install JS Dependencies (IF NPM not installed then Download and install the NodeJS windows installer.https://nodejs.org/en/)
 ```
 npm install
 ```
 
-8. Watch Files
+9. Watch Files
 ```
 npm run watch
 ```
 
-9. Run Server
+10. Run Server
 ```
 php artisan serve
 ```
 
-Admin Link
+### Admin Credentials
 ```
 http://127.0.0.1:8000/login
 #username: rehman@msn.com
 #password: creative123
 ```
 
-Frontend Link
+### Frontend Link
 ```
 http://127.0.0.1:8000
 ```
