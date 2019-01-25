@@ -84,6 +84,11 @@ http://127.0.0.1:8000/login
 http://127.0.0.1:8000
 ```
 
+### Running PHPUnit tests
+```
+Go to current project directory and type 'vendor\bin\phpunit' then all test cases will be executed
+```
+
 ## Authors
 
 * **Syed Rehman Ghani**
