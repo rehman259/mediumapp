@@ -11,6 +11,7 @@ These instructions will get you a copy of the project up and running on your loc
 What things you need to install.
 ```
 # PHP 7.0
+# Composer
 # Laravel 5.4
 # NPM
 
@@ -19,9 +20,8 @@ What things you need to install.
 
 * Laravel
 * VueJS
-* PHPUnit
 
-### Installing
+### Installing Steps
 
 A step by step series of examples that tell you how to get a development env running
 
@@ -57,7 +57,7 @@ php artisan db:seed
 php artisan key:generate
 ```
 
-8. Install JS Dependencies (IF NPM not installed then Download and install the NodeJS windows installer.https://nodejs.org/en/)
+8. Install JS Dependencies (If NPM not installed then download and install installer from https://nodejs.org/en/)
 ```
 npm install
 ```
