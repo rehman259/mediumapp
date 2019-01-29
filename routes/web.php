@@ -41,8 +41,4 @@ Route::get('/', [
     'as' => 'index'
 ]);
 
-Route::get('/test', function(){
-    return App\User::find(1)->profile;
-});
-
 
