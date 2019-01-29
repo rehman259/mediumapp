@@ -31,7 +31,7 @@ composer install
 ```
 
 ```
-2. Copy new .env file in case its not available. 
+2. Run this command to copy new .env file: 'mv .env.example .env' 
 ```
 
 ```
@@ -57,7 +57,7 @@ php artisan db:seed
 php artisan key:generate
 ```
 
-8. Install JS Dependencies (If NPM not installed then download and install installer from https://nodejs.org/en/)
+8. Install JS Dependencies (If Node not installed then download and install installer from https://nodejs.org/en/ also install libdev-png for Node if needed.)
 ```
 npm install
 ```
